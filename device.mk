@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/on7xelte
+LOCAL_PATH := device/samsung/on7xreflte
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -33,4 +33,4 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk
 $(call inherit-product, device/samsung/exynos7870-common/device-common.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/on7xelte/on7xelte-vendor.mk)
+$(call inherit-product, vendor/samsung/on7xreflte/on7xreflte-vendor.mk)

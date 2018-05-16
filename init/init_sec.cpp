@@ -12,9 +12,9 @@
 
 #include "init_sec.h"
 
-#define MODEL_NAME_LEN 5  // e.g. "G610F"
-#define BUILD_NAME_LEN 8  // e.g. "DDU1BQH9"
-#define CODENAME_LEN   10 // e.g. "on7xeltedd"
+#define MODEL_NAME_LEN 5  // e.g. "G611F"
+#define BUILD_NAME_LEN 8  // e.g. "DDU1AQLA"
+#define CODENAME_LEN   10 // e.g. "on7xrefltedd"
 
 
 static void property_override(char const prop[], char const value[]) {
@@ -38,7 +38,7 @@ void vendor_load_properties()
     const std::string bootloader = android::base::GetProperty("ro.bootloader", "");
     const std::string bl_model = bootloader.substr(0, MODEL_NAME_LEN);
     const std::string bl_build = bootloader.substr(BUILD_NAME_LEN);
-    const std::string device = "on7xelte";
+    const std::string device = "on7xreflte";
 
     std::string model;
     std::string name;
@@ -54,8 +54,8 @@ void vendor_load_properties()
     }
 
     if (name.size() == 0) {
-        LOG(ERROR) << "Could not detect codename, forcing on7xeltedd";
-        name = "on7xeltedd";
+        LOG(ERROR) << "Could not detect codename, forcing on7xrefltedd";
+        name = "on7xrefltedd";
     }
 
     description = name + "-user 7.0 NRD90M " + bl_model + bl_build + " release-keys";

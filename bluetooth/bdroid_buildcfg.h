@@ -18,6 +18,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "J7 Prime"
+#define BTM_DEF_LOCAL_NAME   "ON7 Prime"
 
 #endif
